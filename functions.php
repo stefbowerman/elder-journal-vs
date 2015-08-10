@@ -149,6 +149,15 @@ function elder_post_siblings_links(){
 //     return 'class="styled-button"';
 // }
 
+function elder_archive_link(){
+  $page = get_page_by_path('archives');
+  if($page){
+    echo '<div class="a-center">';
+      echo '<a href="'.get_permalink($page->ID).'" class="button">View Archives</a>';
+    echo '</div>';    
+  }
+}
+
 
 /**
  * Removes inline width attributes for div that wraps images with captions

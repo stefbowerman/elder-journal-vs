@@ -1,6 +1,14 @@
 <?php
+/**
+ * Template Name: Front Page
+ * The template used on the root page of the site
+ */
 
 get_header();
+
+  $query_args = array('posts_per_page' => 1 );
+
+  query_posts( $query_args );
 
     if ( have_posts() ) :
       // Start the Loop.
@@ -13,7 +21,7 @@ get_header();
           </div>
 
           <div class="post-meta">
-            <?php echo get_the_date('F j, Y'); ?>
+            <?php elder_linkable_date(); ?>
           </div>
           
           <div class="post-content">
@@ -27,5 +35,7 @@ get_header();
       <?php endwhile;
 
     endif;
+
+    elder_archive_link();
 
 get_footer();

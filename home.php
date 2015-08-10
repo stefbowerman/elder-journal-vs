@@ -1,10 +1,4 @@
 <?php
-/**
- * Template Name: Archives
- * The template for displaying Archive pages
- *
- */
-
 
 get_header(); ?>
 
@@ -52,7 +46,7 @@ get_header(); ?>
 
                 <div class="page-listed-post-content">
                   <div class="page-listed-post-meta">
-                    Posted: <?php elder_linkable_date(); ?>
+                    Posted: <?php echo get_the_date('F j, Y'); ?>
                   </div>
                   <?php the_excerpt(); ?>
                 </div>
