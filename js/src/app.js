@@ -80,7 +80,7 @@
       clientId: 'c98519f417fb49328d7c0c0e2207d167',
       accessToken: '1423636911.c98519f.a9f00f7aba0f48dba092fdccad459e54',
       target: 'footer-gallery-list-insta',
-      template: '<li><a href="{{link}}"><img src="{{image}}" /></a></li>',
+      template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></li>',
       limit: 6,
       resolution: 'low_resolution',
       before: function(){
