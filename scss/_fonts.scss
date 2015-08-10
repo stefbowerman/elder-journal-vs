@@ -1,0 +1,30 @@
+$font-path: './fonts';
+
+@font-face {
+  font-family: "ITCFranklinGothicW01-Dm";
+  src: url("#{$font-path}/ITCFranklinGothicW01-Dm.eot?#iefix");
+  src: url("#{$font-path}/ITCFranklinGothicW01-Dm.eot?#iefix") format("eot"),
+       url("#{$font-path}/ITCFranklinGothicW01-Dm.woff") format("woff"),
+       url("#{$font-path}/ITCFranklinGothicW01-Dm.ttf") format("truetype"),
+       url("#{$font-path}/ITCFranklinGothicW01-Dm.svg#426ce955-d5bd-4a77-b077-402088f77e65") format("svg");
+}
+
+@font-face {
+  font-family: "Garamond Premier";
+  src: url("#{$font-path}/GaramondPrmrW01-Md.eot?#iefix");
+  src: url("#{$font-path}/GaramondPrmrW01-Md.eot?#iefix") format("eot"),
+       url("#{$font-path}/GaramondPrmrW01-Md.woff") format("woff"),
+       url("#{$font-path}/GaramondPrmrW01-Md.ttf") format("truetype"),
+       url("#{$font-path}/GaramondPrmrW01-Md.svg#52d2afe4-7fc2-421f-9b36-cbd9da1a9fc6") format("svg");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Garamond Premier";
+  src: url("#{$font-path}/GaramondPremrPro-Bd.eot?#iefix");
+  src: url("#{$font-path}/GaramondPremrPro-Bd.eot?#iefix") format("eot"),
+       url("#{$font-path}/GaramondPremrPro-Bd.woff") format("woff"),
+       url("#{$font-path}/GaramondPremrPro-Bd.ttf") format("truetype"),
+       url("#{$font-path}/GaramondPremrPro-Bd.svg#GaramondPremrPro-Bd") format("svg");
+  font-weight: bold;
+}

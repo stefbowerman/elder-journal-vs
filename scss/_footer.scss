@@ -1,0 +1,34 @@
+/* ============================================ *
+ * Footer
+ * ============================================ */
+
+.footer {
+    clear: both;
+    width: 100%;
+    padding-top: $trim;
+    text-align: center;
+
+    @include bp(max-width, $bp-xsmall) {
+        padding-top: $trim-small;
+    }
+}
+
+.footer-logo { // Square Monogram
+    display: inline;
+    width: 40px;
+}
+
+.footer-links {
+    padding: 7px 0;
+    font-family: $f-stack-special;
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $f-size-xs;
+        li {
+            margin: 0 6px;
+            display: inline-block;
+        }
+    }
+} 

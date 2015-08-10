@@ -1,0 +1,103 @@
+// Content on the individual post page
+
+.post {
+  margin-bottom: 40px;
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  p {
+    max-width: floor($col1-medium-fixed-width * 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.post-meta {
+  text-align: center;
+  font-style: italic;
+}
+
+.page-title,
+.post-title {
+  + .post-meta {
+    margin-top: -26px;
+  }
+}
+
+.post-content {
+  margin: 20px 0;
+}
+
+.post-tags {
+  font-size: $f-size-s;
+  line-height: $f-size-s + 6px;
+}
+
+.post-siblings-links {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $f-stack-sans;
+  a {
+    color: $c-text-gray;
+  }
+}
+
+.post-siblings-link-prev,
+.post-siblings-link-next {
+  display: inline-block;
+  // position: relative;
+  padding: 0 5px;
+}
+
+.post-siblings-link-prev:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+  width: 6px;
+  height: 12px;
+  background: url(./images/caret-left.png) top left no-repeat;
+  background-size: 6px 10px;
+}
+
+.post-siblings-link-next:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  background: url(./images/caret-right.png) top left no-repeat;
+  background-size: 6px 10px;
+  margin-left: 5px;
+}
+
+.post-siblings-link-separator {
+  display: inline-block;
+  margin: 0 5px;
+  width: 2px;
+  height: 12px;
+  background-color: $c-text-gray;
+}
+
+iframe[src*="youtube.com/embed"],
+iframe[src*="player.vimeo"],
+.wp-video {
+  display:block;
+  width: 100% !important;
+  margin: 0 auto 20px;
+  // max-height: 250px;
+}
+
+// @media screen and (max-width: $screen-ipad-portrait) {
+//   iframe[src*="youtube.com/embed"],
+//   iframe[src*="player.vimeo"],
+//   .wp-video { 
+//     max-height: 280px !important;
+//   }
+// }

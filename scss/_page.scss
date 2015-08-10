@@ -1,0 +1,40 @@
+.page-listed-posts {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $c-white;
+  border-color: transparentize($c-white, 0.7);
+}
+.page-subtitle {
+  margin-bottom: 6px;
+}
+
+.page-listed-post-meta {
+  font-size: $f-size - 2px;
+  margin-bottom: 10px;
+}
+
+.page-listed-post {
+  margin-bottom: 30px;
+  &:after {
+    @include clearfix;
+  }
+}
+
+.page-listed-post-thumb {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  img {
+    border-radius: 2px;
+  }
+}
+
+.page-listed-post-content {
+  margin-bottom: 10px;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,230 @@
+// Fonts
+// --------------------------------------------------
+$f-stack-sans: "ITCFranklinGothicW01-Dm", Helvetica, Arial, "Lucida Grande", sans-serif;
+$f-stack-serif: "Garamond Premier", Georgia, serif;
+$f-stack-special: $f-stack-sans; // 'Raleway', 'Helvetica Neue', Verdana, Arial, sans-serif;
+
+$f-stack-default: $f-stack-serif;
+$f-stack-headings: $f-stack-sans;
+
+// Font Sizes
+
+$f-size: 15px;
+
+$f-size-xxxl: $f-size + 7px; // 22px;
+$f-size-xxl: $f-size + 4px;
+$f-size-xl: $f-size + 3px;
+$f-size-l: $f-size + 1px;
+
+$f-size-s: $f-size - 1px;
+$f-size-xs: $f-size - 3px;
+$f-size-xxs: $f-size - 4px;
+
+// Base Measures
+
+$b-line-height: 1.5;
+$b-margin-bottom: 1.5em;
+
+// Spacing
+
+$gap: 10px;
+
+$trim: 30px;
+// This will get applied on viewports smaller than 480px
+$trim-small: 15px;
+
+// Padding that will get applied to content areas
+$box-spacing-large: 20px;
+
+// Standard padding around box elements such as banner messages, etc
+$box-spacing: 10px;
+
+// Standard spacing between elements within a box, such as "Add to cart", "Price box", etc
+$element-spacing: 10px;
+
+// Dimensions
+
+$max-content-width: 1200px;
+$max-container-width: $trim + $max-content-width + $trim;
+$max-std-formatted-width: 50em;
+$max-sidebar-content-width: 135px;
+
+$col1-small-fixed-width: 500px; // Used to restrict content width on certain pages (account, etc...)
+$col1-medium-fixed-width: 750px; // Used to restrict content width on certain pages with a lot of text (cms, cart etc...)
+
+$header-height-small: 60px; // Height of the header below $bp-small;
+$touch-target-size: 40px; // good min height / width for mobile size elements (header icons).  Square elements should be 40x40px
+
+// Typography
+// --------------------------------------------------
+$font-size-h1:                28px;
+$font-size-h2:                24px;
+$font-size-h3:                18px;
+$font-size-h4:                14px;
+$font-size-h5:                13px;
+$font-size-h6:                12px;
+
+// Brand Colors
+// --------------------------------------------------
+
+// Usually not used directly in Sass partials.
+// Only used to define context-based color vars in this file.
+
+$c-blue: #3399CC;
+$c-green: #11B400;
+$c-pink: #D85378;
+$c-orange: #F3793B;
+$c-red: #CF5050;
+$c-yellow: #FFDD15;
+$c-black: #000000;
+$c-gray: #333333;
+$c-gray-med: #898989;
+$c-gray-light: #CCC;
+$c-gray-lightest: #EEE;
+$c-offwhite: #F6F6F6;
+$c-white: #FFFFFF;
+
+// Base Colors
+// --------------------------------------------------
+
+// Text
+
+$c-text: $c-black;
+$c-text-gray: #A0A0A0;
+$c-text-white: #E6E6E6;
+// Primary font color for headings and other non-link text
+$c-text-primary: $c-black;
+
+$c-body: $c-white;
+
+
+// Interaction
+
+$c-action: $c-blue;
+$c-stimulus: darken($c-blue, 15%);
+$c-subtle: #A0A0A0;
+
+// Notifications
+
+$c-danger: #D04340;
+$c-danger-background: #FAEBE7;
+
+$c-success: #409E37;
+$c-success-background: #EBF5EA;
+
+$c-warn: #BBA02B;
+$c-warn-background: #F9F3E6;
+
+$c-dark: #676157;
+
+// Global Elements
+
+$c-divider-border: #ECECEC;
+
+// Element Colors
+// --------------------------------------------------
+
+// Buttons
+
+$c-button: $c-blue;
+$c-button-hover: darken($c-blue, 5%);
+$c-button-active: darken($c-blue, 10%);
+
+// Secondary Buttons
+
+$c-button-secondary: #DDDDDD;
+$c-button-secondary-hover: darken(#DDDDDD, 5%);
+$c-button-secondary-active: darken(#DDDDDD, 10%);
+
+$c-button-subtle: #ECECEC;
+
+// Forms
+
+$c-input-border: #C0C0C0;
+$c-input-border-focus: $c-blue;
+
+$c-input-placeholder: $c-text-gray;
+$c-input-text: $c-text;
+
+$c-fieldset-border: #CCCCCC;
+$c-fieldset-border-light: #EDEDED;
+
+// Headings
+
+$c-h1: $c-text;
+$c-h2: $c-text;
+$c-h3: $c-text;
+$c-h4: $c-text;
+$c-h5: $c-text;
+$c-h6: $c-text;
+
+// Link
+$c-link: $c-text;
+$c-link-hover: $c-link;
+$c-link-focus: $c-link;
+$c-link-active: $c-link;
+
+// Module (generic)
+
+$c-module-background: #F4F4F4;
+$c-module-background-hover: shade($c-module-background, 3%);
+$c-module-background-secondary: #EAF8FF;
+$c-module-background-dark: #AAAAAA;
+// This should be applied whenever the border is surrounding a white element and/or is directly showing on white.
+$c-module-border: #CCCCCC;
+// This should be applied whenever the border is wrapping an element with $c-module-background
+$c-module-border-light: #EDEDED;
+$c-module-border-dark: #777777;
+$c-module-border-highlight: $c-blue;
+
+
+// Table
+
+$c-table-background: $c-body;
+$c-table-border: $c-gray-lightest;
+
+$c-table-zebra-odd: #F8F7F5;
+$c-table-zebra-even: #EEEDED;
+
+// Tabs
+
+$c-tabs-background: #F0F0F0;
+
+// Email
+$c-email-background: #EBEBEB;
+$c-email-background-secondary: #E1F0F8;
+$c-email-border: #C3CED4;
+$c-email-action: #3696C2;
+$c-email-cell: #F1F1F1;
+$c-email-highlighted-background: #FFFDD9;
+$c-email-highlighted-border: #FFF74C;
+
+
+// Layout
+// --------------------------------------------------
+$siteWidth:                   1280px;
+$siteWidthHD:                 1920px;
+
+$footer-height:               40px;
+
+// Primary Break Points
+// --------------------------------------------------
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+// If these are changed, they must also be updated in app.js
+
+$bp-iphone6: 374px; // iphone 6 starts at 375px
+
+$bp-xsmall: 479px;
+$bp-small: 599px;
+$bp-medium: 770px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
+
+// Z-indexes
+// --------------------------------------------------
+
+$z-index-dropdown-search-mobile: 99 !default;
+$z-index-header : 100 !default;
+$z-index-header-cart: 101 !default;

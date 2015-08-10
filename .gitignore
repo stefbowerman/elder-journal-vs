@@ -1,0 +1,10 @@
+.bin
+.sass-cache
+.DS_Store
+
+node_modules/gulp
+node_modules/autoprefixer
+node_modules/gulp-concat
+node_modules/gulp-minify-css
+node_modules/gulp-rename
+node_modules/gulp-sass

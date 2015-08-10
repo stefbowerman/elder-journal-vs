@@ -1,0 +1,109 @@
+// $home-post-border-width: 12px;
+
+// .home-post {
+//   display: block;
+//   position: relative;
+//   vertical-align: top;
+//   margin: 0 auto 10px;
+//   padding: 0 5px;
+//   width: 100%;
+//   max-width: 450px;
+//   text-align: center;
+// }
+
+// .home-post-link {
+//   display: inline-block;
+//   max-width: 100%;
+// }
+
+// .home-post-wrapper {
+//   position: relative;
+//   // border: $home-post-border-width solid $c-white;
+//   // transition: border-color 100ms linear;
+// }
+
+// .home-post-overlay-excerpt {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $c-white;
+//   font-weight: bold;
+//   font-family: $f-stack-sans;
+//   font-size: $font-size-h3 - 4px;
+//   background-color: transparent;
+//   transition: background-color 100ms ease-in-out;
+
+//   p {
+//     margin: 0;
+//   }
+// }
+
+// .post-excerpt-table {
+//   height: 100%;
+//   width: 100%;
+//   td {
+//     vertical-align: middle;
+//     padding: 10px;
+//   }
+// }
+
+// .home-post-image {
+//   display: block;
+//   max-width: 100%;
+// }
+
+// // Hover styles for the post
+
+// .home-post-link {
+//   &:hover,
+//   &:focus {
+//     .home-post-wrapper{
+//       // border-color: #0047A0;
+//       // transition: border-color 200ms ease-in-out;      
+//     }
+//     .home-post-overlay-excerpt {
+//       background-color: transparentize($c-black, 0.5);
+//       transition: background-color 200ms ease-in-out; 
+//     }
+//   }
+// }
+
+// // Home page infinite scroll
+// #infscr-loading {
+//   position: absolute;
+//   text-align: center;
+//   width: 100%;
+//   bottom: -60px;
+//   img {
+//     display: none;
+//   }
+// }
+
+// .home-navigation {
+//   padding: 10px 0 25px;
+// }
+
+// @media screen and (min-width: $screen-ipad-portrait) {
+//   .home-posts-list {
+//     margin-bottom: 60px;
+//   }
+//   .home-post {
+//     width: 50%;
+//     display: inline-block;
+//     float: left;
+//     text-align: none;
+//   }
+//   #infscr-loading {
+//     bottom: -110px;
+//   }
+// }
+
+// @media screen and (min-width: $screen-ipad-landscape) {
+//   .home-post {
+//     width: 33%;
+//   }
+// }

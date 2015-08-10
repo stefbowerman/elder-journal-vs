@@ -1,0 +1,34 @@
+// Wordpress Core CSS for post formatting
+
+.alignleft {
+  float: left;
+  margin-right: $b-line-height;
+  margin-bottom: $b-line-height;
+}
+
+.alignright {
+  float: right;
+  margin-left: $b-line-height;
+  margin-bottom: $b-line-height;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wp-caption:not(.aligncenter) {
+  display: inline-block;
+}
+
+.wp-caption-text {
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+  font-size: $f-size-s;
+  p {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,135 @@
+/*
+ * 
+    $bp-xsmall: 479px;
+    $bp-small: 599px;
+    $bp-medium: 770px;
+    $bp-large: 979px;
+    $bp-xlarge: 1199px;
+ *
+ */
+
+/* ============================================ *
+ * Header
+ * ============================================ */
+
+.page-header {
+    position: fixed;
+    z-index: $z-index-header;
+    height: $header-height-small;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: $c-body;
+    font-family: $f-stack-special;
+}
+
+#header-spacer {
+    height: $header-height-small + 20px; // header height + header bottom margin
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+    .page-header {
+        position: static;
+        height: auto; // Reset the height from 60px
+        max-width: $max-container-width;
+        margin: 0 auto 30px;
+        padding: 14px $trim;
+    }
+
+    .page-header-container {
+        position: relative;
+    }
+
+    // Hide this since the header goes from being position 'fixed' to 'static'
+    #header-spacer {
+        display: none;
+    }
+
+}
+
+
+/* ============================================ *
+ * Logo
+ * ============================================ */
+
+// Logo is positioned absolutely (centered) within the header until the small breakpoint 
+// at which point it is centered by setting the horizontal margins to auto
+
+$logo-width-xsmall: 140px;
+$logo-width-small:  190px;
+// $logo-width-medium: 350px;
+$logo-width-large:  500px;
+
+$logo-height-xsmall: 20px;
+$logo-height-small:  25px;
+// $logo-height-medium: 48px;
+$logo-height-large:  68px;
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -(floor($logo-height-xsmall / 2));
+    margin-left: -($logo-width-xsmall / 2);
+    height: $logo-height-xsmall;
+    width: $logo-width-xsmall;
+    max-width: 100%;
+    background: url('./images/logo-black.png') no-repeat center transparent;
+    background-size: contain;
+    text-decoration: none;
+}
+
+// ---------------------------------------------
+
+@include bp(min-width, $bp-iphone6 + 1) {
+    .logo {
+        margin-top: -(floor(($logo-height-small / 2)));
+        margin-left: -($logo-width-small / 2);
+        height: $logo-height-small;
+        width: $logo-width-small;
+    }
+}
+
+@include bp(min-width, $bp-medium + 1) {
+    .logo {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0; // reset small screen styles
+        margin: 30px auto 10px;
+        height: $logo-height-large;
+        width: $logo-width-large;
+    }
+}
+
+/* ============================================ *
+ * Burger
+ * ============================================ */
+
+.header-burger {
+    position: absolute;
+    height: $touch-target-size;
+    width: $touch-target-size;
+    // height: 25px;
+    // width: 25px;
+    left: $trim-small - (($touch-target-size - 22px) / 2); // Make the left edge line up with the trim spacing
+    top: 50%;
+    margin-top: -(ceil($touch-target-size  / 2)) + 1px;
+    padding: (40px - 22px) / 2;
+    background: url('./images/icon-hamburger.png') no-repeat center transparent;
+    background-size: 18px 18px;
+}
+
+// RWD CSS is annoying, they throw in a randow breakpoint at 480px for some reason to increase content padding on the left and right, see _common.scss:755
+@include bp(min-width, 480px) {
+    .header-burger {
+        left: $trim - (($touch-target-size - 22px) / 2); // Make the left edge line up with the trim spacing
+    }
+}
+
+@include bp(min-width, $bp-medium + 1) {
+    .header-burger {
+        display: none;
+    }
+}

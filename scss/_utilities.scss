@@ -1,0 +1,15 @@
+@each $alignment in (left, right, center) {
+  .text-#{$alignment}) {
+    text-align: #{$alignment};      
+  }
+}
+
+.small {
+  font-size: $f-size-s;
+}
+
+.clearfix {
+  &:after {
+    @include clearfix;
+  }
+}
