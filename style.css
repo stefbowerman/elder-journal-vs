@@ -2287,6 +2287,7 @@ body.nav-mobile-open {
 
 .post-siblings-links {
   display: block;
+  margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
   font-family: "ITCFranklinGothicW01-Dm", Helvetica, Arial, "Lucida Grande", sans-serif; }
@@ -2353,7 +2354,7 @@ iframe[src*="youtube.com/embed"], iframe[src*="player.vimeo"], .wp-video {
 
 .page-listed-post-thumb {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
   margin-bottom: 0;
   width: 150px;
   height: 150px;

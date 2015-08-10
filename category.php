@@ -18,7 +18,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header(); ?>
+get_header(); echo 'category' * 200;?>
 
       <?php if ( have_posts() ) : ?>
 
