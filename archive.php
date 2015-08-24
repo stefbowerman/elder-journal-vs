@@ -56,7 +56,7 @@ get_header(); ?>
                   </div>
                   <?php the_excerpt(); ?>
                 </div>
-                <a href="<?php the_permalink(); ?>" class="strong" title="<?php the_title(); ?>">Read Post ↦</a>
+                <a href="<?php the_permalink(); ?>" class="strong" title="<?php the_title(); ?>">Read Post</a>
               </div>
 
             <?php 
