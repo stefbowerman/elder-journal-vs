@@ -22,7 +22,7 @@ get_header();
           </div>
 
           <div class="post-meta">
-            <?php echo get_the_date('F j, Y'); ?>
+            <?php elder_linkable_date(); ?>
           </div>
           
           <div class="post-content">

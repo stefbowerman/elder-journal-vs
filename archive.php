@@ -52,7 +52,7 @@ get_header(); ?>
 
                 <div class="page-listed-post-content">
                   <div class="page-listed-post-meta">
-                    Posted: <?php elder_linkable_date(); ?>
+                    <?php elder_linkable_date(); ?>
                   </div>
                   <?php the_excerpt(); ?>
                 </div>

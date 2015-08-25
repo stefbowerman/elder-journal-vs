@@ -16,6 +16,7 @@
           <div class="footer-links">
             <ul>
               <li><a href="http://elder-statesman.com/about-us">About Us</a></li>
+              <li><a href="http://instagram.com/theelderstatesmanofficial" target="_blank">Instagram</a></li>
               <li><a href="http://elder-statesman.com/terms-and-conditions">Terms &amp; Conditions</a></li>
               <li><a href="http://elder-statesman.com/faq">FAQ</a></li>
             </ul>        

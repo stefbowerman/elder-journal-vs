@@ -46,7 +46,7 @@ get_header(); ?>
 
                 <div class="page-listed-post-content">
                   <div class="page-listed-post-meta">
-                    Posted: <?php echo get_the_date('F j, Y'); ?>
+                    <?php echo get_the_date('F j, Y'); ?>
                   </div>
                   <?php the_excerpt(); ?>
                 </div>

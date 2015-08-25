@@ -158,6 +158,13 @@ function elder_archive_link(){
   }
 }
 
+function elder_archive_link_inline(){
+  $page = get_page_by_path('archives');
+  if($page){
+    echo '<a href="'.get_permalink($page->ID).'">View Archives</a>';
+  }
+}
+
 
 /**
  * Removes inline width attributes for div that wraps images with captions
@@ -188,3 +195,19 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 
 add_shortcode( 'wp_caption', 'fixed_img_caption_shortcode' );
 add_shortcode( 'caption', 'fixed_img_caption_shortcode' );
+
+
+/**
+ * Removes links to full size images in post content
+ */
+add_filter( 'the_content', 'attachment_image_link_remove_filter' );
+function attachment_image_link_remove_filter( $content ) {
+    $content =
+        preg_replace(
+            array('{<a(.*?)(wp-att|wp-content\/uploads)[^>]*><img}',
+                '{ wp-image-[0-9]*" /></a>}'),
+            array('<img','" />'),
+            $content
+        );
+    return $content;
+}

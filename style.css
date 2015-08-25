@@ -2264,7 +2264,8 @@ body.nav-mobile-open {
   .post img {
     max-width: 100%;
     height: auto;
-    margin: 10px 0; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .post p {
     max-width: 637px;
     margin-left: auto;

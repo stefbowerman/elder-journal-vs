@@ -21,7 +21,7 @@ get_header();
           </div>
 
           <div class="post-meta">
-            <?php elder_linkable_date(); ?>
+            <?php elder_linkable_date(); ?> || <?php elder_archive_link_inline(); ?>
           </div>
           
           <div class="post-content">

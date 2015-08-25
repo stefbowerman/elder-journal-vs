@@ -13,7 +13,7 @@ get_header();
           </div>
 
           <div class="post-meta">
-            <?php echo get_the_date('F j, Y'); ?>
+            <?php elder_linkable_date(); ?> || <?php elder_archive_link_inline(); ?>
           </div>
           
           <div class="post-content">
@@ -27,5 +27,7 @@ get_header();
       <?php endwhile;
 
     endif;
+
+    elder_archive_link();
 
 get_footer();
