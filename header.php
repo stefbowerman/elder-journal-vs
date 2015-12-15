@@ -55,7 +55,7 @@
                         <a href="<?php echo site_url(); ?>" class="level0">Journal</a>
                       </li>
                       <li class="level0 nav-5 last">
-                        <a href="http://elder-statesman.com/retail-store.html" class="level0">Retail Store</a>
+                        <a href="http://elder-statesman.com/retail-stores.html" class="level0">Retail Stores</a>
                       </li>
                       <li><a href="http://elder-statesman.com/customer/account/login/">Login</a></li>
                       <li><a href="http://elder-statesman.com/customer/account/create/">Register</a></li>
@@ -78,7 +78,7 @@
               <li class="category-custom"><a href="http://elder-statesman.com/custom.html">Custom</a></li>
               <li class="category-gallery"><a href="http://elder-statesman.com/gallery.html">Gallery</a></li>
               <li class="category-journal current"><a href="<?php echo site_url(); ?>">Journal</a></li>
-              <li class="category-retail-store"><a href="http://elder-statesman.com/retail-store.html">Retail Store</a></li>
+              <li class="category-retail-store"><a href="http://elder-statesman.com/retail-stores.html">Retail Stores</a></li>
             </ul>  
           </div>
         </div>
