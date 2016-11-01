@@ -7,8 +7,7 @@
     "gulp": "~3.8.7",
     "gulp-concat": "~2.3.4",
     "gulp-minify-css": "~0.3.7",
-    "gulp-rename": "~1.2.0",
-    "gulp-sass": "~0.7.2"
+    "gulp-rename": "~1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +15,7 @@
   "author": "Streetvirus",
   "license": "ISC",
   "devDependencies": {
-    "gulp-autoprefixer": "~1.0.1"
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-sass": "^2.3.2"
   }
 }
