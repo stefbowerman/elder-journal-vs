@@ -59,6 +59,7 @@
                       <li class="level0 nav-5 last">
                         <a href="http://elder-statesman.com/retail-stores.html" class="level0">Retail Stores</a>
                       </li>
+                      <li><a href="http://elder-statesman.com/about.html">About</a></li>
                       <li><a href="http://elder-statesman.com/customer/account/login/">Login</a></li>
                       <li><a href="http://elder-statesman.com/customer/account/create/">Register</a></li>
                   </ul>
@@ -76,13 +77,22 @@
               
           <div class="header-nav">
             <ul>
-              <li class="category-shop"><a href="http://elder-statesman.com/shop.html">Shop</a></li>
-              <li class="category-custom"><a href="http://elder-statesman.com/custom.html">Custom</a></li>
+              <li class="category-shop">
+                <a href="http://elder-statesman.com/shop.html">Shop</a>
+              </li>
+              <li class="category-custom">
+                <a href="http://elder-statesman.com/custom.html">Custom</a>
+              </li>
               <?php /*
               <li class="category-gallery"><a href="http://elder-statesman.com/gallery.html">Gallery</a></li>
               <li class="category-journal current"><a href="<?php echo site_url(); ?>">Journal</a></li>
               */ ?>
-              <li class="category-retail-store"><a href="http://elder-statesman.com/retail-stores.html">Retail Stores</a></li>
+              <li class="category-retail-store">
+                <a href="http://elder-statesman.com/retail-stores.html">Retail Stores</a>
+              </li>
+              <li class="category-about">
+                <a href="http://elder-statesman.com/about.html">About</a>
+              </li>
             </ul>  
           </div>
         </div>
